@@ -9,7 +9,7 @@ Feature: Purchase a ticket on TicketMonster
       | Child Ticket Price | #ticket-category-fieldset-12 > div > div > span |
 
   Scenario: Open the application
-    Given I open the page "https://ticketmonster-jdf.rhcloud.com"
+    Given I open the page "http://ticket-monster.herokuapp.com"
     And I wait "30" seconds for the element found by "logo" to be displayed
     Then I verify that the browser title should be "Ticket Monster"
 
