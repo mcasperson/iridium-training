@@ -3,10 +3,10 @@ Feature: Purchase a ticket on TicketMonster
     Given I set the alias mappings
       | Venue Selection | #venueSelector |
       | Section Selection | #sectionSelect |
-      | Adult Count | #ticket-category-fieldset-5 > div > div > input |
+      | Adult Count | /html/body/div[2]/div[2]/div[2]/div[1]/div/div/form/div[1]/div/div/input |
       | Email Address | #email |
-      | Adult Ticket Price | #ticket-category-fieldset-5 > div > div > span |
-      | Child Ticket Price | #ticket-category-fieldset-12 > div > div > span |
+      | Adult Ticket Price | /html/body/div[2]/div[2]/div[2]/div[1]/div/div/form/div[1]/div/div/span |
+      | Child Ticket Price | /html/body/div[2]/div[2]/div[2]/div[1]/div/div/form/div[2]/div/div/span |
 
   Scenario: Open the application
     Given I open the page "http://ticket-monster.herokuapp.com"
